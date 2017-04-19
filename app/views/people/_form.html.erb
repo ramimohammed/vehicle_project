@@ -24,8 +24,10 @@
     <%= f.text_field :Email %>
   </div>
   <div class="field">
+    
     <%= f.label :Date_of_birth %><br>
-    <%= f.date_select :Date_of_birth %>
+     <%= f.date_select :Date_of_birth, :start_year => 1970, :end_year => 2020 %>
+  
   </div>
   <div class="actions">
     <%= f.submit %>
