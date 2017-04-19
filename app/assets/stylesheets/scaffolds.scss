@@ -1,9 +1,25 @@
 body {
-  background-color: #fff;
+  background-color: #8ba7d3;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  
+  
+  table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+  
+  
 }
 
 p, ol, ul, td {
