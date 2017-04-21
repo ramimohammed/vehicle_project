@@ -1,3 +1,9 @@
+class User < ActiveRecord::Base
+
+  
+
+
+
 <%= form_for(@person) do |f| %>
   <% if @person.errors.any? %>
     <div id="error_explanation">
@@ -10,14 +16,18 @@
       </ul>
     </div>
   <% end %>
+  
+ 
 
   <div class="field">
+    
+   
     <%= f.label :First_name %><br>
-    <%= f.text_field :First_name %>
+    <%= f.text_field :First_name , class: "form-control" , required: true  %>
   </div>
   <div class="field">
     <%= f.label :Last_name %><br>
-    <%= f.text_field :Last_name %>
+    <%= f.text_field :Last_name , class: "form-control" , required: true %>
   </div>
   <div class="field">
     <%= f.label :Email %><br>
